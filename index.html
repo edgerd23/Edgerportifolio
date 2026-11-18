@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edger Dawson — Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient glow orbs -->
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+
+    <!-- Custom cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ===== NAVBAR ===== -->
+    <header id="mainHeader">
+        <div class="logo">Edger Dawson</div>
+        <nav id="desktopNav">
+            <ul>
+                <li><a href="#hero" data-section="hero">HOME</a></li>
+                <li><a href="#interests" data-section="interests">SKILLS &amp; INTERESTS</a></li>
+                <li><a href="#about" data-section="about">ABOUT</a></li>
+                <li><a href="#projects" data-section="projects">PROJECTS</a></li>
+                <li><a href="#contact" data-section="contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="#hero" class="mobile-link">HOME</a></li>
+            <li><a href="#interests" class="mobile-link">SKILLS &amp; INTERESTS</a></li>
+            <li><a href="#about" class="mobile-link">ABOUT</a></li>
+            <li><a href="#projects" class="mobile-link">PROJECTS</a></li>
+            <li><a href="#contact" class="mobile-link">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <main class="main-content">
+
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero" id="hero">
+            <div class="hero-text">
+                <div class="hero-greeting">
+                    <span class="dot"></span>
+                    Available for collaboration
+                </div>
+                <h1 class="hero-name">Hello, I'm<br><span>Edger Dawson</span></h1>
+
+                <!-- Typing animation -->
+                <div class="hero-typing-wrap">
+                    <span class="typing-prefix">I'm a </span>
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+
+                <p class="hero-sub">A passionate developer and creator from Tanzania, building digital experiences that combine clean code with bold visual design.</p>
+
+                <div class="hero-cta">
+                    <a href="CV.pdf" download class="btn btn-primary">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fa-solid fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- ===== AREA OF INTEREST & SKILLS SECTION ===== -->
+        <section class="interests" id="interests">
+            <h2 class="section-title reveal">Area of Interest &amp; Skills</h2>
+            <div class="interests-grid">
+
+                <div class="interest-card reveal delay-1" data-color="cyan">
+                    <div class="interest-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="interest-body">
+                        <h3>Cyber Security</h3>
+                        <p>Exploring ethical hacking, internet connectivity, network security and protect online environments.</p>
+                    </div>
+                    <div class="interest-tags">
+                        <span>Ethical Hacking</span><span>Networking</span>
+                    </div>
+                </div>
+
+                <div class="interest-card reveal delay-2" data-color="purple">
+                    <div class="interest-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <div class="interest-body">
+                        <h3>AI</h3>
+                        <p>Exploring AI innovation and use it solve the daily problems.</p>
+                    </div>
+                </div>
+
+                <div class="interest-card reveal delay-3" data-color="pink">
+                    <div class="interest-icon">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <div class="interest-body">
+                        <h3>Graphic Design</h3>
+                        <p>Creating visually compelling identities, posters, and digital assets using industry tools — translating ideas into bold, memorable visuals.</p>
+                    </div>
+                    <div class="interest-tags">
+                        <span>Canva</span><span>Pixel lab</span><span>Branding</span>
+                    </div>
+                </div>
+
+                <div class="interest-card reveal delay-4" data-color="blue">
+                    <div class="interest-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="interest-body">
+                        <h3>Web Development</h3>
+                        <p>Building responsive, performant, and accessible web applications with modern stacks.</p>
+                    </div>
+                    <div class="interest-tags">
+                        <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== ABOUT SECTION ===== -->
+        <section class="about" id="about">
+            <h2 class="section-title reveal">About Me</h2>
+
+            <div class="about-grid">
+                <div class="about-img-wrap reveal">
+                    <img src="image/Me.jpg" alt="Edger Dawson">
+                </div>
+
+                <div class="about-content reveal delay-2">
+                    <p>I'm <strong>Edger Dawson</strong> — a self-taught Web Developer, Graphic Designer, and Technology Enthusiast based in Tanzania. I craft digital experiences that sit at the intersection of clean engineering and bold visual design.</p>
+                    <p>With a passion for problem-solving and a sharp eye for detail, I bring ideas to life through code and creativity. Whether it's building a web application or designing a brand identity from scratch, I pursue quality in every pixel and line of code.</p>
+
+                    <div class="about-badges">
+                        <div class="about-badge">
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                            <span>Tanzania</span>
+                        </div>
+                        <div class="about-badge">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Self-Taught Developer</span>
+                        </div>
+                        <div class="about-badge">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Open to Freelance</span>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Web Development</span><span>70%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Graphic Design</span><span>40%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Cyber Security</span><span>20%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="20"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS SECTION ===== -->
+        <section class="projects" id="projects">
+            <h2 class="section-title reveal">My Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card reveal delay-1"
+                    data-title="Kudy Restaurant Website"
+                    data-desc="Modern responsive restaurant website built with HTML featuring an interactive menu, shopping cart, reservation system, gallery, but on future development it'll be with a responsive layouts, smooth animations, clean UI/UX, accessibility, performance, and scalable frontend architecture."
+                    data-stack="HTML,CSS,JavaScript"
+                    data-img="image/kudy.jpg"
+                    data-link="https://kudy-restaurant.netlify.app/">
+                    <div class="project-thumb">
+                        <img src="image/kudy.jpg" alt="Kudy Restaurant Website">
+                        <div class="project-thumb-overlay">
+                            <button class="project-preview-btn"><i class="fa-solid fa-expand"></i> View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Kudy Restaurant</h3>
+                        <p>KUDY is a modern, responsive restaurant website designed to provide customers with a smooth and engaging food-ordering experience. The website combines an attractive restaurant interface with practical features such as menu browsing, cart management, order summaries, and a responsive checkout experience. 🚀</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal delay-2"
+                    data-title="Calculator"
+                    data-desc="A fully functional calculator application with a clean, minimal interface supporting all basic arithmetic operations — addition, subtraction, multiplication, and division — with keyboard support."
+                    data-stack="HTML,CSS,JavaScript"
+                    data-img="image/cal.jpg"
+                    data-link="https://mycalculator-ap.netlify.app/">
+                    <div class="project-thumb">
+                        <img src="image/cal.jpg" alt="Calculator">
+                        <div class="project-thumb-overlay">
+                            <button class="project-preview-btn"><i class="fa-solid fa-expand"></i> View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Calculator</h3>
+                        <p>A simple and fully functional calculator that performs addition, subtraction, division, and multiplication.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal delay-3"
+                    data-title="Task Manager"
+                    data-desc="TaskFlow is a modern productive web app for creating, organizing, tracking and completing tasks efficiently. It provides clean dashboard, task search and filters, priorities, categories, analytics, progress tracking, local data storage, JSON import/export. customizable themes and a mobile friendly interface."
+                    data-stack="HTML,CSS,JavaScript"
+                    data-img="image/task.jpg"
+                    data-link="https://taskfapp.netlify.app/">
+                    <div class="project-thumb">
+                        <img src="image/task.jpg" alt="TaskFlow-App">
+                        <div class="project-thumb-overlay">
+                            <button class="project-preview-btn"><i class="fa-solid fa-expand"></i> View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Manager</h3>
+                        <p>TaskFlow is a modern, responsive task manager built with plain HTML, CSS and vanilla JavaScript. It has no build step, no framework and no backend — every task lives in your browser's localStorage, so the app works offline and stays instant.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal delay-4"
+                    data-title="Posters & Flyers"
+                    data-desc="A curated collection of professional poster and flyer designs created for brands and events across Tanzania. Each piece is crafted to communicate clearly while maintaining a strong visual identity."
+                    data-stack="Pixel lab,Canva"
+                    data-img="image/post.jpg"
+                    data-link="https://p.hel.ink/a/r8tihf">
+                    <div class="project-thumb">
+                        <img src="image/post.jpg" alt="Posters & Flyers">
+                        <div class="project-thumb-overlay">
+                            <button class="project-preview-btn"><i class="fa-solid fa-expand"></i> View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Posters &amp; Flyers</h3>
+                        <p>I design impressive and attractive posters, flyers, and logos for brands and events.</p>
+                        <div class="project-tags">
+                            <span class="tag">Pixel lab</span><span class="tag">Canva</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="projects-cta reveal">
+                <a href="https://github.com/edgerd23" target="_blank" class="btn btn-glow">
+                    <i class="fa-brands fa-github"></i> View All Projects
+                    <span class="btn-glow-ring"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <div class="contact-container">
+
+                <div class="left-box reveal">
+                    <img src="image/cont.jpg" alt="Contact" class="contact-image">
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                            <span>Tanzania, East Africa</span>
+                        </div>  
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://wa.me/+2555615425906" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/edgerd23" target="_blank" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://tiktok.com/@dayungo_23" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://instagram.com/dayungo_23" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://t.me/Dayungo23" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://discord.gg/mmPtATQY" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+
+                <div class="right-box reveal delay-2">
+                    <h2>Let's Work Together</h2>
+                    <p class="form-subtitle">Have a project in mind? Drop me a message — I'll get back to you within 24 hours.</p>
+                    <form id="contactForm" action="https://formspree.io/f/mvzewjrq" method="POST">
+                        <div class="form-row">
+                            <div class="field">
+                                <label>Your Name</label>
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="field">
+                                <label>Your Email</label>
+                                <input type="email" name="email" placeholder="email@example.com" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Subject</label>
+                            <input type="text" name="subject" placeholder="Project Inquiry" required>
+                        </div>
+                        <div class="field">
+                            <label>Message</label>
+                            <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>© 2025 <span>Edger Dawson</span>. Crafted with <span>♥</span> in Tanzania.</p>
+    </footer>
+
+    <!-- ===== PROJECT MODAL ===== -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-box">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-img-wrap">
+                <img src="" alt="" id="modalImg">
+            </div>
+            <div class="modal-body">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+                <div class="modal-stack" id="modalStack"></div>
+                <a href="#" target="_blank" class="btn btn-primary" id="modalLink">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
